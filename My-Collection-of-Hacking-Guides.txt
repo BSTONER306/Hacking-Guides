@@ -71,7 +71,7 @@ MAIN HACKING TECHNIQUES
             2--[ Weaponised Websites ]--
                  -Driveby Downloads of signed java applets
                  -browser exploits eg in JavaScript VMs
-                 
+(*)Exploit Vulnerable running services
                  REFRENCE:
                  Hacker's Hut
                  MetaPhish Paper
