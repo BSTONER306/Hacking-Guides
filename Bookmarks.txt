@@ -1,0 +1,43 @@
+# Bookmarks 
+
+#tftp exploitation writeup
+https://dominicbreuker.com/post/htb_dropzone/
+ Need to bypass amsi in VBA??
+
+https://github.com/sevagas/macro_pack
+
+https://outflank.nl/blog/2019/04/17/bypassing-amsi-for-vba/
+
+https://github.com/atxsinn3r/amsiscanner/blob/master/amsiscanner.cpp
+
+[2]https://github.com/r00t-3xp10it/hacking-material-books/blob/master/obfuscation/simple_obfuscation.md
+
+http://www.py2exe.org/index.cgi/Tutorial#Step1
+
+https://github.com/Arno0x/EmbedInHTML
+
+https://github.com/thezimtex/red-team#weaponization
+
+[1]using sed tool to modify mimikatz 
+Strings and bypass AV:--[
+https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/
+]
+
+Exercise:download mimikatz and modify it accordingly[1] [and upload on virus total do the same VBA macros [2]
+
+https://blog.sevagas.com/?String-encryption-using-macro-and
+
+https://blog.sevagas.com/?Rogue-WiFi-Access-point
+
+#you can capture WIFI data using aircrack-ng without connecting to it and capture credintials such as cookies
+https://blog.sevagas.com/?The-cookie-factory
+
+Living of the land Binary
+https://github.com/LOLBAS-Project/LOLBAS#criteria
+
+
+
+
+
+
+
