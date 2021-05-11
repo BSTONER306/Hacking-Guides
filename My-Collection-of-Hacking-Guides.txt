@@ -1,0 +1,152 @@
+# My-Collection-of-Hacking-Guides 
+
+ABSTRACT:
+This document was prepared by QuickEdit my
+favorite text Editor.
+
+
+[1]How to install pentesterlabs VMs:---[ http://www.sec-art.net/2018/03/how-to-install-web-for-pentester-vm-in.html?m=1 ]----
+
+[2]https://theanarchistlibrary.org/library/phineas-fisher-hackback-a-diy-guide-ii.pdf
+
+[3]Hacker's Hut,this a handbook for hackers,very great to use as a reference whenever you hack recommended by[2]:----[ http://www.win.tue.nl/~aeb/linux/hh/hh.html ]----also available here as
+a PDF:---[ https://www.mediafire.com/file/k8s56crei83wuef/HACKER'S+HUT.pdf/file ]----
+
+[4]For basics of web pentesting and 
+Summary of most common web,vulnerabilities complete with VM ISO for practice---[ https://pentesterlab.com/exercises/web_for_pentester/course ]---
+
+[5] Download "Web for Pentester" vm iso lab---[ https://www.vulnhub.com/entry/pentester-lab-web-for-pentester-ii,68/ ]---
+
+[6]How to install WFP vm iso lab on
+VirtualBox--[ https://www.vulnhub.com/entry/pentester-lab-web-for-pentester-ii,68/ ]---
+
+[7]Handbook About Crypters And binders
+
+[8]--[ sqlzoo.net ]--learn SQL interractively
+
+[9]https://web.archive.org/web/20190321234218/http://www.pdfill.com/download/AcroJS.pdf ]--acrobat
+Javascripting Refrence.
+
+[10]PDFfill is a PDF editor tool 
+That can be used to add executable 
+JavaScript codes in PDF docs----[https://www.pdfill.com/document.html ]---
+
+[11]The Web Application Hackers Handbook-Is the best practical book 
+On cracking websites it contains tips and step by step procedures of exploitation
+
+Exercise: write a reversehell macro and use netcat to handle connection using Cron job
+
+[12]reverse shell cheat sheet contain various reverse shell code snippets to incorporate in hacking campaigns--[ http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet ]--
+
+A program can get enviromental variables using getenv() API from
+C --[ https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/rzaie/rzaieenvvar.htm ]--
+
+#unix cheat sheet --[ https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/rzaie/rzaieenvvar.htm ]--
+
+#password are stored In memory and
+Can be obtained thru crash dump of 
+a process:- https://winscp.net/eng/docs/security_credentials
+
+#
+
+#
+
+#Domain names implementation--rfc 1035
+
+# steal emails: https://www.wired.com/2011/09/doppelganger-domains/
+
+
+#infosec for pentester https://f1.holisticinfosecforwebdevelopers.com/chap08.html
+#tftp exploit https://dominicbreuker.com/post/htb_dropzone/
+
+†************************************************†
+MAIN HACKING TECHNIQUES
+*****************************
+(NB*):
+-Most companies use ACTIVE DIRECTORY stracture in Networking (check: Microsoft Windows
+          server Essentials, Learning Microsoft Active Directory Management in a Month of Lunches by Richard)
+          -ALWAYS test every hacking technique in a VIRTUALBOX lab before the actual hack
+          
+(*)Recon:
+            -[METADATA] of published docs can determine type of Apps
+            that organization uses that can be exploited in
+            PHISHING campaigns.
+            -Read organization's sites and determine org's working with it
+            -latest news
+            -search for employees details in LinkedIn, Facebook etc
+            -search for domains and scan ports for Vulnerable services,web apps etc
+            -zone transfer using 'dig',whois(query registration details,info of
+             intrest: nameservers beginning with ns1.- that can be
+            used for zone transfer) utility
+            -fin
+            
+            
+
+(*)Social Engineering:
+            1--[Weaponized Documents]---
+                   -vba macros in word &Excel(spawn Rshell,download scripts and EXEs).
+                   -javascript in PDF docs 
+                   -file formats exploits in documents viewers
+           
+            2--[ Weaponised Websites ]--
+                 -Driveby Downloads of signed java applets
+                 -browser exploits eg in JavaScript VMs
+                 
+                 REFRENCE:
+                 Hacker's Hut
+                 MetaPhish Paper
+                 HackBack DIY Guide Manifesto[ https://theanarchistlibrary.org/library/phineas-fisher-hackback-a-diy-guide-ii ]
+                
+(*)STEALTH(bypass AVs):
+                -You can ENCRYPT part of code that is
+                Malicious ---[ https://blog.sevagas.com/?Code-segment-encryption ]
+                -AMSI bypass tutorial --[  https://codewhitesec.blogspot.com/2019/07/heap-based-amsi-bypass-in-vba.html?m=1 ]
+                -http://blog.sevagas.com/Bypass-Antivirus-Dynamic-Analysis
+                -[ https://blog.scrt.ch/2020/06/19/engineering-antivirus-evasion/ ], instead of using
+                the libtooling tool you can use the SED text processing
+                tool to modify your source code before compiling
+                
+
+                  
+                 
+†************************************************†         
+BOOKS
+*******
+(*)Unix Unleashed(4th Edition):- for unix administrators
+(*)The web Application Handbook:- For Practical aspects
+of hacking web applications.(NB:combined with pentersterlabs VMs for practice).
+(*) HACKER'S HUT: Some random hacking hints, mainly from a Linux point of view--[ https://www.win.tue.nl/~aeb/linux/hh/hh.html ]
+†**************************************************†
+CODING CORNER
+*****************
+(*) Basic of Malware Development/Coding:
+            -Command &Control--[ https://niiconsulting.com/checkmate/2018/03/malware-development-welcome-dark-side-part-2-2/ ]
+            -Malware Skeleton---[ https://0x00sec.org/t/programming-for-wannabes-part-vi-malware-introduction/25595 ]
+(*)CGI:- is a standard for interfacing external applications with information servers, such as HTTP or Web servers
+--[ https://web.archive.org/web/20090904161301/http://hoohoo.ncsa.illinois.edu/cgi/overview.html ]--
+(*)VBA macro reverse shell --[ https://github.com/scriptchildie/MaliciousVBA ]--
+(*)escape string characters in VBA ---[ https://riptutorial.com/vba/example/11918/escaping-the---character ]--
+†*************************************************
+TOOL CORNER
+***************
+(*)EXIFTOOL--for viewing metadata of documents 
+available for windows and unix--[ https://exiftool.org/install.html#Unix ]
+         usage:
+         exiftool -r <FILENAME>
+         Intresting fields:- <Author> and <creator>(shows
+         the software that produced the doc)
+
+(*)SQLMAP-tool for sql injection/hacking SQL databases
+(*)NETCAT-transfer files,banner grabbing(ref:hacker's hut)
+(*) DROPBOX C2:- [https://github.com/0x09AL/DropboxC2C]--
+(*)DNSTEAL:-exfiltrate data thru dns:-[ https://github.com/m57/dnsteal ]
+(*)WHOIS:- for windows and unix-query registration details
+(*)DIG:-for linux/used for zone transfer
+(*)SED-is a match and replace tool for transforming 
+            text with regular Expression.---[ https://en.m.wikipedia.org/wiki/Sed ]
+    
+INFO
+(*) Resources For Aspiring Penentesters
+https://www.netspi.com/blog/technical/network-penetration-testing/resources-for-aspiring-penetration-testers/
+
+
